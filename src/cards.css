@@ -9,14 +9,15 @@ html {
 .icon {color: #BCD2DA;}
 
 .card {
-    /* display, flex-direction */
+    display:flex; flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    
 }
 
 .card__description {
-    /* display, flex-direction, justify-content, align-items */
+    display:flex; flex-direction:column; justify-content:flex-start; align-items:center;
     padding: 15px 0;
 }
 
@@ -41,17 +42,23 @@ html {
 
 .cardGroup {
     /* display */
-  
+    display: flex;
+    width: 710px;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    width: 60%;
+    margin: auto;
   }
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-  
+      flex-shrink: 0;
+      flex-basis: 0;
+      flex-grow: 1; 
       border: none;
       border-radius: 0;
+      
     }
   
     .cardGroup__card {
@@ -60,4 +67,14 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis:0;
+    }
+
+    @media (max-width: 710px){
+      .cardGroup{
+        max-width: 320px;
+      }
+
     }
