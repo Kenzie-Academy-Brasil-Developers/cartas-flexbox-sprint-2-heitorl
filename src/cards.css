@@ -75,6 +75,11 @@ html {
     @media (max-width: 710px){
       .cardGroup{
         max-width: 320px;
+        width: 100%;
+      }
+      .card__descriptionText {
+        font-size: 10px;
+         
       }
 
     }
