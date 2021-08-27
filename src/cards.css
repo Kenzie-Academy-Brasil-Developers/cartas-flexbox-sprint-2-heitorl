@@ -47,15 +47,13 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    width: 60%;
+    width: 65%;
     margin: auto;
   }
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-      flex-shrink: 0;
-      flex-basis: 0;
-      flex-grow: 1; 
+      flex: 50%;
       border: none;
       border-radius: 0;
       
@@ -67,9 +65,7 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis:0;
+     flex: 50%;
     }
 
     @media (max-width: 710px){
